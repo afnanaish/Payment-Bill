@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(69, 69, 174);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.header {
+  width: 96%;
+  height: 20%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-bottom: 7px solid rgba(17, 35, 95, 0.744);
+}
+
+.billContainer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.menuTobics {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  gap: 25%;
+  color: #ffffff;
+  text-decoration: underline;
+  align-items: center;
+}
+
+.menuItems {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuItem {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  gap: 2%;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.yellowItem {
+  background-color: rgb(179, 134, 29);
+  border-color: rgb(179, 134, 29);
+}
+
+.biegeItem {
+  background-color: beige;
+  border-color: beige;
+}
+
+.itemNameAndPhoto {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemPrice {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+}
+
+.itemImage {
+  width: 50px;
+}
+
+.totalPayment {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(137, 43, 226, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orderDetails {
+  width: 60%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 9%;
+  align-items: center;
+}
+
+.orderItems {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.totalPrice {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/totalPayment.css" />
+    <title>Payment Bill</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="header">
+        <h1>Pay by Credit Card</h1>
+      </div>
+      <div class="billContainer">
+        <div class="menu">
+          <div class="menuTobics">
+            <div><h4>Items</h4></div>
+            <div><h4>Price</h4></div>
+          </div>
+
+          <div class="menuItems">
+            <div class="menuItem yellowItem" onclick="addToCart('burger');">
+              <div class="itemNameAndPhoto">
+                <h2>Burger</h2>
+                <img class="itemImage" src="assets/img/burgerItem.png" />
+              </div>
+              <div class="itemPrice">
+                <h2>$6</h2>
+              </div>
+            </div>
+            <div class="menuItem biegeItem" onclick="addToCart('pizza');">
+              <div class="itemNameAndPhoto">
+                <h2>Pizza</h2>
+                <img class="itemImage" src="assets/img/pizzaItem.png" />
+              </div>
+              <div class="itemPrice">
+                <h2>$15</h2>
+              </div>
+            </div>
+            <div class="menuItem yellowItem" onclick="addToCart('shawarma');">
+              <div class="itemNameAndPhoto">
+                <h2>Shawarma</h2>
+                <img class="itemImage" src="assets/img/shawarmaItem.png" />
+              </div>
+              <div class="itemPrice">
+                <h2>$4</h2>
+              </div>
+            </div>
+            <div class="menuItem biegeItem" onclick="addToCart('crispy');">
+              <div class="itemNameAndPhoto">
+                <h2>Crispy</h2>
+                <img class="itemImage" src="assets/img/crispyItem.png" />
+              </div>
+              <div class="itemPrice">
+                <h2>$18</h2>
+              </div>
+            </div>
+            <div class="menuItem yellowItem" onclick="addToCart('tacos');">
+              <div class="itemNameAndPhoto">
+                <h2>Tacos</h2>
+                <img class="itemImage" src="assets/img/tacosItem.png" />
+              </div>
+              <div class="itemPrice">
+                <h2>$7</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="totalPayment">
+            <div class="orderDetails">
+                <div  class="orderItems">
+                  <p id="orderItems"></p>
+                </div>
+                <div class="totalPrice">
+                  <p id="totalPrice"></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="assets/js/index.js"></script>
+</html>

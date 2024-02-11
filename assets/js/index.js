@@ -13,6 +13,8 @@ const itemsPrices = new Map([
   ["tacos", 7],
 ]);
 
+ordersCount = 0;
+
 function addToCart(itemName) {
   var itemCount = itemsCount.get(itemName);
   itemsCount.set(itemName, itemCount + 1);
@@ -20,6 +22,7 @@ function addToCart(itemName) {
 
   showOrderItems();
   calculateTotalPrice();
+  showOrdersCountOnCart();
 }
 
 function showOrderItems() {
@@ -45,4 +48,11 @@ function calculateTotalPrice() {
   }
   document.getElementById("totalPrice").innerHTML =
     "Total Price = $" + totalPrice;
+}
+
+var cartIcon = document.querySelector(".cartIcon");
+
+function showOrdersCountOnCart() {
+  ordersCount += 1;
+  cartIcon.style.setProperty("--ordersCount", '"' + ordersCount + '"'); //                              Update the CSS variable with the ordersCount
 }

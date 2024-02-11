@@ -4,12 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/totalPayment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
     <title>Payment Bill</title>
   </head>
   <body>
     <div class="mainContainer">
       <div class="header">
         <h1>Pay by Credit Card</h1>
+        <div>
+          <i
+            class="cartIcon fa-solid fa-cart-shopping fa-xl"
+            style="color: #ffffff"
+          ></i>
+          <div id="orderNum"></div>
+        </div>
       </div>
       <div class="billContainer">
         <div class="menu">
@@ -67,14 +78,14 @@
           </div>
         </div>
         <div class="totalPayment">
-            <div class="orderDetails">
-                <div  class="orderItems">
-                  <p id="orderItems"></p>
-                </div>
-                <div class="totalPrice">
-                  <p id="totalPrice"></p>
-                </div>
+          <div class="orderDetails">
+            <div class="orderItems">
+              <p id="orderItems"></p>
             </div>
+            <div class="totalPrice">
+              <p id="totalPrice"></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
